@@ -7,11 +7,30 @@
 #           3- Resuldo (Aprovado>=7.0)
 
 
-aluno = []
-notas = []
+listanotas = []
+somanotas = 0
+listaaprovacao = []
 
-for i range (1,11):
-    aluno.append(input ('aluno:'))
-    for i range (0,4):
-         notas.append(input ('notas:'))
+for i in range(0,2):
+    aluno = input("Qual nome do aluno: ")
+    somanotas = 0
+
+    for j in range(4):
+        nota = float(input(f'Qual a nota número {j+1} de {aluno}: '))
+        somanotas += nota 
+    calculonotas = somanotas / 4
+    listanotas.append(calculonotas)
+    if  calculonotas >= 7 :
+        listaaprovacao.append(f'{aluno} - Média: {calculonotas} - aprovado')
+    else:
+        listaaprovacao.append(f'{aluno} - Média: {calculonotas} - reprovado')
+
+for i in listaaprovacao:
+    print(i)
+
+    
+
+
+
+
 
