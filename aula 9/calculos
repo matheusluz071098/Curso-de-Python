@@ -1,0 +1,37 @@
+calculos
+
+
+# crie um rograma que :
+# 1 leia dois numeros inteiros 
+# 2 calcule a soma entre dois numeros atraves de um metodo
+# 3 calcule a subtraçao entre dois numeros atraves de um metodo
+# 4 calcule a multiplicaçao entre dois numeros atraves de um metodo
+# 5 calcule a divisao inteira entre dois numeros atraves de um metodo
+# 6 calcule o resto da divisao fracionada entre dois numeros atraves de um metodo
+# 7 calcule o resto da divisao entre dois numeros atraves de um metodo
+# 8 calcule a raiz entre dois numeros atraves de um metodo
+# 9 separa os metodos em outro arquivo
+
+from MEtodos_calculo import soma
+from MEtodos_calculo import subtraçao
+from MEtodos_calculo import multiplicaçao
+from MEtodos_calculo import divisao
+from MEtodos_calculo import div_frac
+from MEtodos_calculo import resto
+from MEtodos_calculo import raiz
+
+n1= float (input('Digite n1: '))
+n2= float (input('DIgite n2: '))
+
+resultado1=soma(n1,n2)
+resultado2=subtraçao(n1,n2)
+resultado3=multiplicaçao(n1,n2)
+resultado4=divisao(n1,n2)
+resultado5=div_frac(n1,n2)
+resultado6=resto(n1,n2)
+resultado7=raiz(n1,n2)
+
+Calculos=[soma, subtraçao, multiplicaçao, divisao, div_frac, resto, raiz]
+
+for i in Calculos:
+    print(i(n1,n2))

@@ -8,3 +8,5 @@ for i in range(1,11):
     aluno.append (input('digite seu nome: '))
 print(aluno)
 
+
+
