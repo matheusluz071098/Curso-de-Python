@@ -1,1 +1,0 @@
-valor = float(input('digte um valor: ')
